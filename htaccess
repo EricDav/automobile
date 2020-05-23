@@ -1,0 +1,15 @@
+Options +FollowSymLinks
+
+
+RewriteRule ^common /404.php [L]
+RewriteRule ^connection.php /404.php [L]
+RewriteRule ^controller.php /404.php [L]
+RewriteRule ^Data.php /404.php [L]
+RewriteRule ^helpers.php /404.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /404.php [L]
+
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://automobilemarketingplace.com/$1 [R,L]
