@@ -1,6 +1,6 @@
 <?php
 	if ($_SERVER['HTTP_HOST'] == 'localhost:8888') {
-		$subFolder = '\web';
+		$subFolder = '\automobile';
 	} else {
 		$subFolder = '/';
 	}
